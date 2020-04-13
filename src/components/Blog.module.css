@@ -1,5 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
 .mainDiv {
     width: 100%;
-    height: 100vh;
-    background-color: red;
+    min-height: 100vh;
+    background-color: white;
+    color:#616161;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.line {
+    width: 80px;
+    height: 3px;
+    background: #616161;
+    margin-bottom: 30px;
+}
+a {
+    min-height: 70vh;
+    color: inherit;
+    text-decoration: none;
+
+}
+.postContainer {
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.image {
+    margin:0 auto;
+    height: 150px;
+    width: 100%;
+
+}
+.image > img {
+    width: 100%;
+    height: 150px;
+}
+
+.date, .title, .description, .postLine {
+  margin: 2px 0;
+}
+
+.date {
+    font-weight: lighter;
+    font-style: italic;
+}
+.title {
+    font-weight: bolder;
+}
+
+.postLine {
+    background: #04c2c9;
+height: 3px;
+margin: 10px 0px;
+width: 25%;
 }

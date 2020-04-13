@@ -4,6 +4,7 @@ import About from '../components/About'
 import Projects from '../components/Projects'
 import Blog from '../components/Blog'
 import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 import styles from './LandingPage.module.css'
 
 function LandingPage() {
@@ -13,7 +14,8 @@ function LandingPage() {
             <About />
             <Projects />
             <Blog />
-            <Contact />
+            {/* <Contact /> */}
+            <Footer />
         </div>
     )
 }

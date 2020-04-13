@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+.mainDiv {
+    width: 100%;
+    height: 30vh;
+    background: #1b242f;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.infoBox {
+    font-style: italic;
+    color: #8f9aa7;
+}
+
+.icons {
+    width: 100%;
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.year {
+    color: #e31b6d;
+}
