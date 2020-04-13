@@ -4,10 +4,11 @@ import About from '../components/About'
 import Projects from '../components/Projects'
 import Blog from '../components/Blog'
 import Contact from '../components/Contact'
+import styles from './LandingPage.module.css'
 
 function LandingPage() {
     return(
-        <div>
+        <div className={styles.mainDiv}>
             <Home />
             <About />
             <Projects />

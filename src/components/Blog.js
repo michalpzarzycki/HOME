@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from './Blog.module.css'
 
 function Blog() {
     return(
-        <div>
+        <div className={styles.mainDiv}>
             Blog
         </div>
     )
