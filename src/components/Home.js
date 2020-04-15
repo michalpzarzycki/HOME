@@ -2,7 +2,8 @@ import React from 'react'
 import styles from './Home.module.css'
 
 function Home() {
-    return(
+    return(  
+     
         <section className={styles.mainDiv}>
             <div className={styles.flex}>
                 <div className={styles.text}>
@@ -10,10 +11,11 @@ function Home() {
                     I'm a front-end developer
                 </div>
                 <div className={styles.button}>
-                    <button>My porjects</button>
+                    <button>My projects</button>
                 </div>
             </div>
         </section>
+    
     )
 }
 

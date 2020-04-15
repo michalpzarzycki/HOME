@@ -25,15 +25,39 @@
 .name {
     color:#e31b6d;
 }
-.button > button {
+.button > button{
   padding:  12px 20px 12px 20px;
   border: 2px solid white;
   cursor: pointer;
   transition: all 0.5s;
   background: transparent;
   font-size: 25px;
+  width:300px;
+ 
+}
+.button > button::after {
+    display: inline-block;
+    content: " \2192";
+    transition: all 0.5;
 }
 .button > button:hover {
 border-color:#04c2c9;
 background-color: #04c2c9;
 }
+
+
+
+.button > button:hover::after {
+    
+    animation: rotate 0.7s ease-in-out forwards;
+  }
+
+  @keyframes rotate {
+    100% {
+      transform: rotate(90deg);
+    }
+  }
+
+
+
+

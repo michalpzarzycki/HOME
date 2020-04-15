@@ -3,7 +3,7 @@ import styles from './Blog.module.css'
 
 function Blog() {
     return(
-        <div className={styles.mainDiv}>
+        <section className={styles.mainDiv}>
               <header>
                 <h1>BLOG</h1>
                 <div className={styles.line}></div>
@@ -52,7 +52,7 @@ function Blog() {
                     <div className={styles.description}>Description goes here</div>
                 </div>
             </a>
-        </div>
+        </section>
     )
 }
 

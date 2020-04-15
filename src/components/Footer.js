@@ -4,7 +4,7 @@ import styles from './Footer.module.css'
 function Footer() {
 
     return(
-        <div className={styles.mainDiv}>
+        <footer className={styles.mainDiv}>
             <div className={styles.icons}>
                 <i>GitHub</i>
                 <i>LinkedIn</i>
@@ -14,7 +14,7 @@ function Footer() {
             <div className={styles.infoBox}>
                 <p>Michal Zarzycki <span className={styles.year}>©2020</span></p>
             </div>
-        </div>
+        </footer>
     )
 }
 

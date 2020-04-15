@@ -26,3 +26,16 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+
+@media (min-width: 600px) {
+ 
+.projectSection {
+    width: calc(70% + 10px);
+    margin: 0 auto;
+    padding: 1px;
+}
+.project > img {
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);}
+    }

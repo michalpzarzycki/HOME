@@ -17,11 +17,13 @@
 .infoBox {
     font-style: italic;
     color: #8f9aa7;
+    height: 50%;
+    justify-content: end;
 }
 
 .icons {
     width: 100%;
-    height: 50px;
+    height: 50%;
     color: white;
     display: flex;
     justify-content: center;

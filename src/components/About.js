@@ -3,7 +3,7 @@ import styles from './About.module.css'
 
 function About() {
     return(
-        <div className={styles.mainDiv}>
+        <section className={styles.mainDiv}>
             <header>
                 <h1>ABOUT</h1>
                 <div className={styles.line}></div>
@@ -36,7 +36,7 @@ function About() {
                     <div className={styles.barPercent}></div>
                 </div>
             </section>
-        </div>
+        </section>
     )
 }
 

@@ -61,3 +61,17 @@ header > p {
     background: #616161;
     margin-bottom: 30px;
 }
+
+/*  */
+@media (min-width: 600px) {
+  .mainDiv {
+      width: 70%;
+      margin: 0 auto;
+
+  }
+  
+  .barSection {
+      width: 90%;
+  }
+  }
+  
