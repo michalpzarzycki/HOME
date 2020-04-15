@@ -29,7 +29,24 @@
     justify-content: center;
     align-items: center;
 }
+.iconBox {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition: 0.5s all;
+}
+.iconBox > p {
+    margin:0;
 
+}
+.iconBox:hover {
+    background: white;
+    color: #8f9aa7;
+    cursor: pointer;
+}
 .year {
     color: #e31b6d;
 }
