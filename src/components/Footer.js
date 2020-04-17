@@ -6,22 +6,27 @@ function Footer() {
     return(
         <footer className={styles.mainDiv}>
             <div className={styles.icons}>
-                <div className={styles.iconBox}>
-                    <i class="fas fa-code-branch"></i>
-                    <p>GitHub</p>
-                </div>
-                <div className={styles.iconBox}>
-                    <i class="fab fa-linkedin-in"></i>
-                    <p>LinkedIn</p>
-                </div>
-                <div className={styles.iconBox}>
+                <a className={styles.a}>
+                    <div className={styles.iconBox}>
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                </a>
+               <a className={styles.a}>
+                    <div className={styles.iconBox}>
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+               </a>
+               <a className={styles.a}>
+               <div className={styles.iconBox}>
                     <i class="fab fa-youtube"></i>
-                    <p>YouTube</p>
                 </div>
-                <div className={styles.iconBox}>
+               </a>
+              <a className={styles.a}>
+              <div className={styles.iconBox}>
                     <i class="fas fa-at"></i>
-                    <p>E-mail</p>
                 </div>
+              </a>
+               
                
             </div>
             <div className={styles.infoBox}>

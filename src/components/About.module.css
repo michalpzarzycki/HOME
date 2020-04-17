@@ -62,6 +62,22 @@ header > p {
     margin-bottom: 30px;
 }
 
+.header {
+    animation: opacity 2s forwards;
+}
+
+/* KEYFRAMES */
+@keyframes opacity {
+    0% {opacity: 0;}
+    50%{opacity: 0.7;}
+    100%{opacity: 1;}
+}
+
+
+@keyframes move {
+    from{transform: translate(-50px, 50px);}
+    to{transform: translate(0, 0);}
+}
 /*  */
 @media (min-width: 600px) {
   .mainDiv {

@@ -8,7 +8,7 @@ function Blog() {
                 <h1>BLOG</h1>
                 <div className={styles.line}></div>
             </header>
-            <a href="/">
+            <a className={styles.a} href="/">
                 <div className={styles.postContainer}>
                     <div className={styles.image}>
                         <img src="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Blog image"/>
@@ -19,7 +19,7 @@ function Blog() {
                     <div className={styles.description}>Description goes here</div>
                 </div>
             </a>
-            <a href="/">
+            <a className={styles.a} href="/">
                 <div className={styles.postContainer}>
                     <div className={styles.image}>
                         <img src="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Blog image"/>
@@ -30,7 +30,7 @@ function Blog() {
                     <div className={styles.description}>Description goes here</div>
                 </div>
             </a>
-            <a href="/">
+            <a className={styles.a} href="/">
                 <div className={styles.postContainer}>
                     <div className={styles.image}>
                         <img src="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Blog image"/>
@@ -41,7 +41,7 @@ function Blog() {
                     <div className={styles.description}>Description goes here</div>
                 </div>
             </a>
-            <a href="/">
+            <a className={styles.a} href="/">
                 <div className={styles.postContainer}>
                     <div className={styles.image}>
                         <img src="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Blog image"/>

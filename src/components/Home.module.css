@@ -3,9 +3,10 @@
 .mainDiv {
     width: 100%;
     height: 100vh;
-    background-color: pink;
     font-size: 42px;
     font-family: 'Raleway', sans-serif;
+    animation: opacity 1.5s ease-in forwards;
+    background-color: black;
 }
 
 .flex {
@@ -20,10 +21,19 @@
     margin: 0 0 15px 0;
     pointer-events: none;
     text-align: center;
+    animation: opacity 1.5s forwards,
+               moveup 1.5s forwards;
+    color: white;
 
 }
 .name {
     color:#e31b6d;
+    font-weight: bolder;
+    font-style: italic;
+}
+.button {
+    animation: opacity 1.5s ease-out forwards,
+                movedown 1.5s forwards;
 }
 .button > button{
   padding:  12px 20px 12px 20px;
@@ -61,3 +71,23 @@ background-color: #04c2c9;
 
 
 
+/* KEYFRAMES */
+@keyframes opacity {
+    0% {opacity: 0;}
+    50%{opacity: 0.7;}
+    100%{opacity: 1;}
+}
+@keyframes halfOpacity {
+    from{opacity: 0;}
+    to{opacity: 0.6;}
+}
+
+@keyframes moveup {
+    from{transform: translate(-50px, 50px);}
+    to{transform: translate(0, 0);}
+}
+
+@keyframes movedown {
+    from{transform: translate(50px, 50px);}
+    to{transform: translate(0, 0);}
+}
