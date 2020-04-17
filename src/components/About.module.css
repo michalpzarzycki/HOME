@@ -8,7 +8,7 @@
     height: 100vh;
     color:#616161;
     font-family: 'Raleway', sans-serif;
-    animation: opacity 2s 0.5s forwards, move 2s 0.5s forwards;
+    animation: opacity 1s  forwards, move 1s forwards;
 
 }
 header {
