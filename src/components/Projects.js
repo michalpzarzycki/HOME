@@ -11,23 +11,23 @@ function Projects({positionY, animation}) {
             <ul className={animation.projects!==false ? styles.projectSection : styles.none}>
                 <li className={animation.projects!==false ? styles.project : styles.none}>
                     <div className={styles.front}></div>
-                    <div className={styles.back}>PROJECT #1 NAME</div>                
+                    <div className={styles.back}><span>PROJECT #1 NAME</span></div>                
                 </li>
                 <li className={animation.projects!==false ? styles.project : styles.none}>
                     <div className={styles.front}></div>
-                    <div className={styles.back}>PROJECT #1 NAME</div>                
+                    <div className={styles.back}><span>PROJECT #1 NAME</span></div>                
                 </li>
                 <li className={animation.projects!==false ? styles.project : styles.none}>
                     <div className={styles.front}></div>
-                    <div className={styles.back}>PROJECT #1 NAME</div>                
+                    <div className={styles.back}><span>PROJECT #1 NAME</span></div>                
                 </li>
                 <li className={animation.projects!==false ? styles.project : styles.none}>
                     <div className={styles.front}></div>
-                    <div className={styles.back}>PROJECT #1 NAME</div>                
+                    <div className={styles.back}><span>PROJECT #1 NAME</span></div>                
                 </li>
                 <li className={animation.projects!==false ? styles.project : styles.none}>
                     <div className={styles.front}></div>
-                    <div className={styles.back}>PROJECT #1 NAME</div>                
+                    <div className={styles.back}><span>PROJECT #1 NAME</span></div>                
                 </li>
                 <li className={animation.projects!==false ? styles.project : styles.none}>
                     <div className={styles.front}></div>
