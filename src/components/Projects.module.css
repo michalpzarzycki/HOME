@@ -30,6 +30,9 @@
 .projectSection {
     display: flex;
     flex-wrap: wrap;
+    opacity: 0;
+    animation: opacity 0.5s 1s forwards, moveX 2s 1s ease-in-out forwards;
+
 }
 /* KEYFRAMES */
 @keyframes opacity {
@@ -43,7 +46,11 @@
     from{transform: translate(50px, -50px);}
     to{transform: translate(0, 0);}
 }
-
+@keyframes moveX {
+    0%{transform: translate(200px, 0);}
+    50%{transform: translate(-100px, 0);}
+    100%{transform: translate(0, 0);}
+}
 @media (min-width: 600px) {
  
 .projectSection {
