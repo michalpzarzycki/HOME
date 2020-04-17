@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from './Projects.module.css'
 
-function Projects() {
+function Projects({positionY, animation}) {
     return(
-        <section className={styles.mainDiv}>
+        <section className={animation.projects!==false ? styles.mainDiv : styles.none}>
              <header>
                 <h1>PROJECTS</h1>
                 <div className={styles.line}></div>

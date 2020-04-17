@@ -27,6 +27,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
+    cursor:context-menu;
 }
 .icons {
     width: 100%;

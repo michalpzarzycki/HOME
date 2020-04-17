@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
 import styles from './About.module.css'
 
-function About() {
+function About({positionY, animation}) {
+useLayoutEffect(()=>{
+    console.log(animation)
+    console.log(animation.about)
+},[positionY])
     return(
-        <section className={styles.mainDiv}>
+        <section className={animation.about!==false ? styles.mainDiv : styles.none}>
             <header>
                 <h1 className={styles.header}>ABOUT</h1>
                 <div className={styles.line}></div>

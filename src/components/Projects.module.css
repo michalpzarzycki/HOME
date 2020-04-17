@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
+.none {
+    opacity: 0;
+}
 .mainDiv {
+    opacity: 0;
     width: 100%;
     min-height: 100vh;
     background-color: #f5f5f5;
     color:#616161;
     font-family: 'Raleway', sans-serif;
+    animation: opacity 2s 0.5s forwards, move 2s 0.5s forwards;
+
 }
 
 .line {
@@ -26,7 +31,18 @@
     display: flex;
     flex-wrap: wrap;
 }
+/* KEYFRAMES */
+@keyframes opacity {
+    0% {opacity: 0;}
+    50%{opacity: 0.7;}
+    100%{opacity: 1;}
+}
 
+
+@keyframes move {
+    from{transform: translate(50px, -50px);}
+    to{transform: translate(0, 0);}
+}
 
 @media (min-width: 600px) {
  
