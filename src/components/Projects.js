@@ -11,27 +11,27 @@ function Projects({positionY, animation}) {
             <ul className={animation.projects!==false ? styles.projectSection : styles.none}>
                 <li className={animation.projects!==false ? styles.project : styles.none}>
                     <div className={styles.front}></div>
-                    <div className={styles.back}><span>PROJECT #1 NAME</span></div>                
+                    <div className={styles.back}><span>MESSANGER</span></div>                
                 </li>
                 <li className={animation.projects!==false ? styles.project : styles.none}>
                     <div className={styles.front}></div>
-                    <div className={styles.back}><span>PROJECT #1 NAME</span></div>                
+                    <div className={styles.back}><span>PACKMAN</span></div>                
                 </li>
                 <li className={animation.projects!==false ? styles.project : styles.none}>
                     <div className={styles.front}></div>
-                    <div className={styles.back}><span>PROJECT #1 NAME</span></div>                
+                    <div className={styles.back}><span>RECRUITMENT APP</span></div>                
                 </li>
                 <li className={animation.projects!==false ? styles.project : styles.none}>
                     <div className={styles.front}></div>
-                    <div className={styles.back}><span>PROJECT #1 NAME</span></div>                
+                    <div className={styles.back}><span>BOOTCAMP PROJECT</span></div>                
                 </li>
                 <li className={animation.projects!==false ? styles.project : styles.none}>
                     <div className={styles.front}></div>
-                    <div className={styles.back}><span>PROJECT #1 NAME</span></div>                
+                    <div className={styles.back}><span>REACT NATIVE APP</span></div>                
                 </li>
                 <li className={animation.projects!==false ? styles.project : styles.none}>
                     <div className={styles.front}></div>
-                    <div className={styles.back}><span>PROJECT #1 NAME</span></div>                
+                    <div className={styles.back}><span>...SOON</span></div>                
                 </li>
             </ul>
         </section>

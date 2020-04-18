@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-
+.none {
+opacity: 0;}
 .mainDiv {
     width: 100%;
     min-height: 100vh;
@@ -68,12 +69,15 @@ height: 3px;
 margin: 10px 0px;
 width: 25%;
 }
+.a{
+    opacity: 0;
+}
 .postDiv {
     width: 100%;
 }
 .postDiv > a:nth-child(1) {
     opacity: 0;
-    animation: opacity 1s 1s forwards, move 1s 1s forwards;
+    animation: opacity 1s 5s forwards, move 1s 5s forwards;
 
 }
 .postDiv > a:nth-child(2) {
