@@ -5,6 +5,7 @@ function Popup({visible, handlePopup}) {
 const [isVisible, setIsVisible] = useState(visible)
     return(
         <div className={visible ? styles.mainDiv : styles.none}>
+            <div onClick={handlePopup} className={styles.background}></div>
             <div className={styles.popupContainer}>
                 <div className={styles.imagesContainer}>
                     <div className={styles.headerSection}>
