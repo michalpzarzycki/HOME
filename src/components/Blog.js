@@ -5,7 +5,7 @@ function Blog() {
     return(
         <section className={styles.mainDiv}>
               <header>
-                <h1>BLOG</h1>
+                <h1 className={styles.mainTitle}>BLOG</h1>
                 <div className={styles.line}></div>
             </header>
             <div className={styles.postDiv}>
