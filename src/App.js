@@ -8,6 +8,7 @@ import {
 import LandingPage from './screens/LandingPage'
 import Article1 from './articles/Article1'
 import './App.css';
+import Article2 from './articles/Article2';
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
      <Switch>
        <Route strict exact path="/" component={LandingPage}/>
        <Route exact path="/article1" component={Article1} />
+       <Route exact path="/article1" component={Article2} />
+
        <Redirect to="/" />
      </Switch>
    </Router>
