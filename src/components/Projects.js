@@ -12,7 +12,9 @@ function Projects({positionY, animation, handlePopup, data}) {
                 {Object.values(data).map((obj, index) => (
                       <li key={index} onClick={() => handlePopup(obj.qid)}  className={animation.projects!==false ? styles.project : styles.none}>
                       <div className={styles.front}></div>
-                <div className={styles.back} ><span>{obj.title}</span></div>                
+                <div className={styles.back} >
+                    <span className={styles.likes}><i class="fas fa-thumbs-up">{obj.likes}</i></span>
+                    <span>{obj.title}</span></div>                
                   </li>
                 ) )}
             </ul>

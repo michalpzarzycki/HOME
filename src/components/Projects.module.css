@@ -48,6 +48,13 @@
     box-sizing: border-box;
     float: left;
 }
+.likes {
+    position: absolute;
+    top:0;
+    right: 0;
+    transform: translate(-50%, 0);
+    color:#616161;
+}
 .project div{
 
     width: 100%;
