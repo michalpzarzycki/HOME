@@ -16,7 +16,10 @@ function Article1() {
             <section className={styles.imageSection}>
                  <img src="https://images.pexels.com/photos/574077/pexels-photo-574077.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Content image"/>
             </section>
-            <section className={styles.introSection}></section>
+            <section className={styles.introSection}>
+                <h1 className={styles.introSection_header}>Introduction</h1>
+                <p className={styles.introSection_paragraph}>One of the most confusing topics for JS developers is defining the context that this referred to. We will try to explain 4 rules which help you to define the context of this.</p>
+            </section>
             <section className={styles.paragraphSection}></section>
             <section cllasName={styles.paragraphSection}></section>
         </div>
