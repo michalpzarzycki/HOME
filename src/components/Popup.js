@@ -8,7 +8,7 @@ function Popup({isVisible}) {
             <div className={styles.popupContainer}>
                 <div className={styles.imagesContainer}>
                     <div className={styles.headerSection}>
-                        <div className={styles.title}>TITLE</div>
+                        <div className={styles.title}>MESSENGER</div>
                         <div className={styles.close}>X</div>
                     </div>
                     <div className={styles.imageSection}>
@@ -24,7 +24,7 @@ function Popup({isVisible}) {
                         <button>COMMENT</button>
                     </div>
                     <div className={styles.description}>
-                        <p>jksadlkasjdlkajsdl as dkjaslkdj laksjd la sjd lkasjdlaksdjl aksjdlak sjd laksdj laksjd laksjd laksjdl</p>
+                        <p>ReactJS chat App connected with Firebase firestore</p>
                     </div>
                     <div className={styles.likesSection}>
                         <p>Like it? Let me know -> </p>

@@ -12,6 +12,7 @@
     justify-content: center;
     align-items: center;
     font-family: 'Raleway', sans-serif;
+ 
 
 }
 
@@ -19,13 +20,15 @@
     width: 100%;
     height: 80%;
     margin: auto;
-    background-color: green;
+    background: #1b242f;
+    color: white;
+  
+    
 }
 
 .imagesContainer {
     width: 100%;
     height: 70%;
-    background-color: red;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,7 +38,6 @@
 .descriptionContainer {
     width: 100%;
     height: 30%;
-    background-color: blue;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,7 +47,6 @@
 .headerSection {
     width: 100%;
     height: 5%;
-    background-color: wheat;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -54,13 +55,13 @@
 .title {
     margin: 0;
     width: 95%;
+    text-align: center;
 }
 .close {
     width: 5%;
     height: 20px;
     border: 1px solid black;
     color: white;
-    background-color: grey;
     border-radius: 50%;
     text-align: center;
     
@@ -69,7 +70,6 @@
 .imageSection {
 width: 100%;
 height: 95%;
-background-color: tomato;
 display: flex;
 flex-direction: row;
 justify-content: center;
@@ -89,9 +89,11 @@ position: relative;
     justify-content: center;
     align-items: center;
     z-index: 3;
+    color: black;
     
 }
 .rightArrow {
+    color: black;
     position: absolute;
     top: 50%;
     left: 100%;
@@ -126,9 +128,17 @@ position: relative;
     align-items: center;
 }
 .buttons > * {
+    color: white;
+    background: #1b242f;
     padding: 10px;
     margin: auto;
     cursor: pointer;
+    border: 1px solid rgba(255,255,255,0.6);
+    box-shadow: 2px 2px 1px 0px rgba(255,255,255,1);
+}
+.buttons > *:hover{
+    background: #04c2c9;
+    color: #8f9aa7;
 }
 .description {
     width: 100%;
@@ -152,6 +162,8 @@ position: relative;
 @media (min-width:600px) {
         .popupContainer {
             width: 50%;
+            border: 1px solid rgba(255,255,255,0.6);
+            box-shadow: 2px 2px 1px 0px rgba(255,255,255,1);
         }
         .buttons > * {
             padding: 10px;
