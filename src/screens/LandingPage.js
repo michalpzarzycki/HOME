@@ -12,6 +12,7 @@ function LandingPage() {
     const [positionY, setPositionY] = useState(0)
     const [isAnimationStart, setIsAnimationStart] = useState({about: false, projects:false, contact: false, blog:false})
     const [isPopupVisible, setIsPopupVisible] = useState(false)
+    const [popupData, setPopupData] = useState({})
     useLayoutEffect(()=>{
         setPositionY(window.pageYOffset)
 
@@ -46,9 +47,36 @@ function LandingPage() {
         return () => window.removeEventListener('scroll', handleScroll)
         }, [positionY])
 
-function handlePopup() {
+function handlePopup(id) {
+    console.log("EVENTS: ", id)
     setIsPopupVisible(prev => !prev)
-    console.log(isPopupVisible)
+    if(id=="packman") {
+            setPopupData({
+                title: 'Packman',
+                id: '',
+                links: {
+                    github: "https://www.github.com",
+                    www: "https://www.google.com",
+                    comments:""
+                },
+                description: "Packman Game, React",
+                gifs:[],
+                likes: 5
+            })
+    } else if(id=="recruitmentApp") {
+                setPopupData({
+                    title: 'RecruitmentApp',
+                    id: '2',
+                    links: {
+                        github: "https://www.github.com",
+                        www: "https://www.google.com",
+                        comments:""
+                    },
+                    description: "Our group project, recruitment App",
+                    gifs:[],
+                    likes: 15
+                })
+    }
 }
     return(
         <div className={styles.mainDiv}>
@@ -57,7 +85,7 @@ function handlePopup() {
             <Projects positionY={positionY} animation={isAnimationStart} handlePopup={handlePopup}/>
             <Blog animation={isAnimationStart}/>
             {/* <Contact /> */}
-            <Popup visible={isPopupVisible} handlePopup={handlePopup}/>
+            <Popup visible={isPopupVisible} handlePopup={handlePopup} popupData={popupData}/>
             <Footer />
         </div>
     )

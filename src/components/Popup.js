@@ -1,15 +1,35 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from './Popup.module.css'
 
-function Popup({visible, handlePopup}) {
+const INIT_STATE = {
+        title: 'TITLE',
+        id: 'id',
+        links: {
+            github: "https://www.github.com",
+            www: "https://www.google.com",
+            comments:""
+        },
+        description: "Description",
+        gifs:[],
+        likes: 5
+}
+
+function Popup({visible, handlePopup, popupData}) {
+const [data, setData] = useState(INIT_STATE)
 const [isVisible, setIsVisible] = useState(visible)
+
+useEffect(() => {
+    setData(popupData)
+    console.log(popupData)
+}, [popupData])
     return(
         <div className={visible ? styles.mainDiv : styles.none}>
+            {console.log("POPUP", popupData)}
             <div onClick={handlePopup} className={styles.background}></div>
             <div className={styles.popupContainer}>
                 <div className={styles.imagesContainer}>
                     <div className={styles.headerSection}>
-                        <div className={styles.title}>MESSENGER</div>
+                     <div className={styles.title}>{data.title}</div>
                         <div onClick={handlePopup} className={styles.close}>X</div>
                     </div>
                     <div className={styles.imageSection}>

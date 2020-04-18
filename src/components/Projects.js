@@ -9,27 +9,27 @@ function Projects({positionY, animation, handlePopup}) {
                 <div className={animation.projects!==false ? styles.line : styles.none}></div>
             </header>
             <ul className={animation.projects!==false ? styles.projectSection : styles.none}>
-                <li onClick={handlePopup} className={animation.projects!==false ? styles.project : styles.none}>
+                <li onClick={() => handlePopup("messenger")}  className={animation.projects!==false ? styles.project : styles.none}>
                     <div className={styles.front}></div>
-                    <div className={styles.back}><span>MESSANGER</span></div>                
+                    <div className={styles.back} ><span>MESSANGER</span></div>                
                 </li>
-                <li onClick={handlePopup}  className={animation.projects!==false ? styles.project : styles.none}>
-                    <div className={styles.front}></div>
+                <li onClick={() => handlePopup("packman")} className={animation.projects!==false ? styles.project : styles.none}>
+                    <div className={styles.front} ></div>
                     <div className={styles.back}><span>PACKMAN</span></div>                
                 </li>
-                <li className={animation.projects!==false ? styles.project : styles.none}>
-                    <div className={styles.front}></div>
+                <li onClick={() => handlePopup("recruitmentApp")} className={animation.projects!==false ? styles.project : styles.none}>
+                    <div className={styles.front} ></div>
                     <div className={styles.back}><span>RECRUITMENT APP</span></div>                
                 </li>
-                <li className={animation.projects!==false ? styles.project : styles.none}>
+                <li onClick={() => handlePopup("bootcampProject")}  className={animation.projects!==false ? styles.project : styles.none}>
                     <div className={styles.front}></div>
                     <div className={styles.back}><span>BOOTCAMP PROJECT</span></div>                
                 </li>
-                <li className={animation.projects!==false ? styles.project : styles.none}>
+                <li onClick={() => handlePopup("reactNativeApp")} className={animation.projects!==false ? styles.project : styles.none}>
                     <div className={styles.front}></div>
                     <div className={styles.back}><span>REACT NATIVE APP</span></div>                
                 </li>
-                <li className={animation.projects!==false ? styles.project : styles.none}>
+                <li onClick={() => handlePopup("soon")} className={animation.projects!==false ? styles.project : styles.none}>
                     <div className={styles.front}></div>
                     <div className={styles.back}><span>...SOON</span></div>                
                 </li>
