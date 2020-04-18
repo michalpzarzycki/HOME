@@ -18,7 +18,6 @@
     margin-bottom: 30px;
 }
 .a {
-    min-height: 70vh;
     color: inherit;
     text-decoration: none;
 
@@ -32,13 +31,17 @@
 }
 .image {
     margin:0 auto;
-    height: 150px;
+    height: auto;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
 
 }
 .image > img {
     width: 100%;
-    height: 150px;
+    height: auto;
 }
 
 .date, .title, .description, .postLine {
@@ -59,19 +62,28 @@ height: 3px;
 margin: 10px 0px;
 width: 25%;
 }
+.postDiv {
+    width: 100%;
+}
 
 @media (min-width: 600px) {
   .a {
-      width: 70%;
+      width: 30%;
   }
-
+.postDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
     .postContainer{
-        width: 50%;
+        width: 90%;
     }
     .image {
         height: 250px;
     }
     .image >img {
-        height: 100%;
+        height: 80%;
     }
 }

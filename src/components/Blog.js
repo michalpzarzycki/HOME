@@ -8,6 +8,7 @@ function Blog() {
                 <h1>BLOG</h1>
                 <div className={styles.line}></div>
             </header>
+            <div className={styles.postDiv}>
             <a className={styles.a} href="/">
                 <div className={styles.postContainer}>
                     <div className={styles.image}>
@@ -52,6 +53,7 @@ function Blog() {
                     <div className={styles.description}>Description goes here</div>
                 </div>
             </a>
+            </div>
         </section>
     )
 }
