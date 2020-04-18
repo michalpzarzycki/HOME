@@ -12,8 +12,10 @@ function Article1() {
                 </div>
                 <div className={styles.home}><Link to="/">HOME</Link></div>
             </section>
-            <section className={styles.titleSection}></section>
-            <section className={styles.imageSection}></section>
+            <section className={styles.titleSection}>Javascript ‘this’ Keyword, How it works?</section>
+            <section className={styles.imageSection}>
+                 <img src="https://images.pexels.com/photos/574077/pexels-photo-574077.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Content image"/>
+            </section>
             <section className={styles.introSection}></section>
             <section className={styles.paragraphSection}></section>
             <section cllasName={styles.paragraphSection}></section>

@@ -49,3 +49,29 @@ margin-right: 20px;
     color: white;
     margin-left: 10px;
 }
+.titleSection {
+ width: 100%;
+ text-align: center;
+ font-size: 40px;
+ font-weight: bolder;
+}
+
+.imageSection {
+    width: 100%;
+    max-height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.imageSection > img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 600px) {
+    .titleSection, .imageSection {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
