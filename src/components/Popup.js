@@ -1,15 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './Popup.module.css'
 
-function Popup({isVisible}) {
-
+function Popup({visible, handlePopup}) {
+const [isVisible, setIsVisible] = useState(visible)
     return(
-        <div className={styles.mainDiv}>
+        <div className={visible ? styles.mainDiv : styles.none}>
             <div className={styles.popupContainer}>
                 <div className={styles.imagesContainer}>
                     <div className={styles.headerSection}>
                         <div className={styles.title}>MESSENGER</div>
-                        <div className={styles.close}>X</div>
+                        <div onClick={handlePopup} className={styles.close}>X</div>
                     </div>
                     <div className={styles.imageSection}>
                         <div className={styles.leftArrow}>&#60;</div>

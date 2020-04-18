@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Projects.module.css'
 
-function Projects({positionY, animation}) {
+function Projects({positionY, animation, handlePopup}) {
     return(
         <section className={styles.mainDiv}>
              <header>
@@ -9,11 +9,11 @@ function Projects({positionY, animation}) {
                 <div className={animation.projects!==false ? styles.line : styles.none}></div>
             </header>
             <ul className={animation.projects!==false ? styles.projectSection : styles.none}>
-                <li className={animation.projects!==false ? styles.project : styles.none}>
+                <li onClick={handlePopup} className={animation.projects!==false ? styles.project : styles.none}>
                     <div className={styles.front}></div>
                     <div className={styles.back}><span>MESSANGER</span></div>                
                 </li>
-                <li className={animation.projects!==false ? styles.project : styles.none}>
+                <li onClick={handlePopup}  className={animation.projects!==false ? styles.project : styles.none}>
                     <div className={styles.front}></div>
                     <div className={styles.back}><span>PACKMAN</span></div>                
                 </li>

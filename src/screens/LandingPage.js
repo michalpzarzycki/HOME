@@ -11,6 +11,7 @@ import styles from './LandingPage.module.css'
 function LandingPage() {
     const [positionY, setPositionY] = useState(0)
     const [isAnimationStart, setIsAnimationStart] = useState({about: false, projects:false, contact: false, blog:false})
+    const [isPopupVisible, setIsPopupVisible] = useState(false)
     useLayoutEffect(()=>{
         setPositionY(window.pageYOffset)
 
@@ -45,15 +46,18 @@ function LandingPage() {
         return () => window.removeEventListener('scroll', handleScroll)
         }, [positionY])
 
-
+function handlePopup() {
+    setIsPopupVisible(prev => !prev)
+    console.log(isPopupVisible)
+}
     return(
         <div className={styles.mainDiv}>
             <Home />
             <About positionY={positionY} animation={isAnimationStart}/>
-            <Projects positionY={positionY} animation={isAnimationStart}/>
+            <Projects positionY={positionY} animation={isAnimationStart} handlePopup={handlePopup}/>
             <Blog animation={isAnimationStart}/>
             {/* <Contact /> */}
-            <Popup />
+            <Popup visible={isPopupVisible} handlePopup={handlePopup}/>
             <Footer />
         </div>
     )
