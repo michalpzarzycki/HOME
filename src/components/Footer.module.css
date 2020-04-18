@@ -11,6 +11,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 
 }
 
@@ -73,6 +74,59 @@
 .a:hover {
 animation: opacity 0.5s forwards, scale 0.5s 0.2s forwards;
 }
+
+.topButton {
+    width: 40px;
+    height: 50px;
+    background-color: magenta;
+    color:white;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    overflow: hidden;
+}
+.topButton>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.topButton:hover{
+    cursor: pointer;
+    
+}
+
+.topButton>div>i:nth-child(2) {
+    transform: translate(0, 100px);
+}
+.topButton:hover > div > i:nth-child(1) {
+    cursor: pointer;
+    animation: moveandbackOne 1s forwards;
+}
+.topButton:hover > div > i:nth-child(2) {
+    cursor: pointer;
+    animation: moveandbackTwo 1s forwards;
+}
+.topButton > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes moveandbackOne {
+    0%{transform: translate(0,0);}
+    100%{transform: translate(0,-100px);}
+
+}
+@keyframes moveandbackTwo {
+    0%{transform: translate(0,100px);}
+    100%{transform: translate(0,-10px);}
+
+}
+
 
 
 @keyframes opacity {

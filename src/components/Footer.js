@@ -5,6 +5,12 @@ function Footer() {
 
     return(
         <footer className={styles.mainDiv}>
+            <a href="/" className={styles.topButton}>
+                <div>
+                <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+                <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+                </div>
+            </a>
             <div className={styles.icons}>
                 <a className={styles.a}>
                     <div className={styles.iconBox}>
