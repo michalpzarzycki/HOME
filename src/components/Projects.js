@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Projects.module.css'
 
-function Projects({positionY, animation, handlePopup}) {
+function Projects({positionY, animation, handlePopup, data}) {
     return(
         <section className={styles.mainDiv}>
              <header>
@@ -9,30 +9,12 @@ function Projects({positionY, animation, handlePopup}) {
                 <div className={animation.projects!==false ? styles.line : styles.none}></div>
             </header>
             <ul className={animation.projects!==false ? styles.projectSection : styles.none}>
-                <li onClick={() => handlePopup("messenger")}  className={animation.projects!==false ? styles.project : styles.none}>
-                    <div className={styles.front}></div>
-                    <div className={styles.back} ><span>MESSANGER</span></div>                
-                </li>
-                <li onClick={() => handlePopup("packman")} className={animation.projects!==false ? styles.project : styles.none}>
-                    <div className={styles.front} ></div>
-                    <div className={styles.back}><span>PACKMAN</span></div>                
-                </li>
-                <li onClick={() => handlePopup("recruitmentApp")} className={animation.projects!==false ? styles.project : styles.none}>
-                    <div className={styles.front} ></div>
-                    <div className={styles.back}><span>RECRUITMENT APP</span></div>                
-                </li>
-                <li onClick={() => handlePopup("bootcampProject")}  className={animation.projects!==false ? styles.project : styles.none}>
-                    <div className={styles.front}></div>
-                    <div className={styles.back}><span>BOOTCAMP PROJECT</span></div>                
-                </li>
-                <li onClick={() => handlePopup("reactNativeApp")} className={animation.projects!==false ? styles.project : styles.none}>
-                    <div className={styles.front}></div>
-                    <div className={styles.back}><span>REACT NATIVE APP</span></div>                
-                </li>
-                <li onClick={() => handlePopup("soon")} className={animation.projects!==false ? styles.project : styles.none}>
-                    <div className={styles.front}></div>
-                    <div className={styles.back}><span>...SOON</span></div>                
-                </li>
+                {Object.values(data).map((obj, index) => (
+                      <li key={index} onClick={() => handlePopup(obj.qid)}  className={animation.projects!==false ? styles.project : styles.none}>
+                      <div className={styles.front}></div>
+                <div className={styles.back} ><span>{obj.title}</span></div>                
+                  </li>
+                ) )}
             </ul>
         </section>
     )

@@ -14,18 +14,19 @@ const INIT_STATE = {
         likes: 5
 }
 
-function Popup({visible, handlePopup, popupData}) {
+function Popup({visible, handlePopup, choosenProject, handleClose}) {
 const [data, setData] = useState(INIT_STATE)
 const [isVisible, setIsVisible] = useState(visible)
 
+
 useEffect(() => {
-    setData(popupData)
-    console.log(popupData)
-}, [popupData])
+    setData(choosenProject)
+    console.log("CHOOS", choosenProject)
+}, [choosenProject])
+
     return(
         <div className={visible ? styles.mainDiv : styles.none}>
-            {console.log("POPUP", popupData)}
-            <div onClick={handlePopup} className={styles.background}></div>
+            <div onClick={handleClose} className={styles.background}></div>
             <div className={styles.popupContainer}>
                 <div className={styles.imagesContainer}>
                     <div className={styles.headerSection}>
