@@ -5,7 +5,7 @@
 .mainDiv {
     opacity: 0;
     width: 100%;
-    height: 100vh;
+    height: auto;
     color:#616161;
     font-family: 'Raleway', sans-serif;
     animation: opacity 1s  forwards, move 1s forwards;
@@ -20,13 +20,13 @@ header {
 header > h1 {
     margin-bottom: 10px;
 }
-header > img {
+section > img {
     height: 200px;
     text-align: center;
     margin: 5px 0 0 5px;
 }
 
-header > p {
+section > p {
     font-size: 12px;
     text-align: center;
 }
@@ -69,8 +69,71 @@ header > p {
 .header {
     animation: opacity 2s forwards;
 }
+.container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto
+}
+.bio {
+text-align: center;
+}
+.barPercent {
+    width: 0;
+}
+
+/* .barPercent:nth-child(2) {
+    animation: width 2s 1s forwards;
+} */
+/* ALL PERCENTAGES BAR */
+.barSection > div:nth-child(1) > .barPercent {
+    background-color: green;
+    animation: width60 2s 1s forwards;
+
+}
+.barSection > div:nth-child(2) > .barPercent {
+    background-color: green;
+    animation: width60 2s 1s forwards;
+
+}
+.barSection > div:nth-child(3) > .barPercent {
+    background-color: green;
+    animation: width60 2s 1s forwards;
+
+}
+.barSection > div:nth-child(4) > .barPercent {
+    background-color: green;
+    animation: width50 2s 1s forwards;
+
+}
+.barSection > div:nth-child(5) > .barPercent {
+    background-color: green;
+    animation: width30 2s 1s forwards;
+
+}
+.barSection > div:nth-child(6) > .barPercent {
+    background-color: green;
+    animation: width30 2s 1s forwards;
+
+}
 
 /* KEYFRAMES */
+/* Width animations */
+@keyframes width60 {
+    from{width: 0;}
+    to{width: 60%;}
+}
+@keyframes width50 {
+    from{width: 0;}
+    to{width: 50%;}
+}
+@keyframes width30 {
+    from{width: 0;}
+    to{width: 30%;}
+}
+
 @keyframes opacity {
     0% {opacity: 0;}
     50%{opacity: 0.7;}
@@ -85,13 +148,25 @@ header > p {
 /*  */
 @media (min-width: 600px) {
   .mainDiv {
-      width: 70%;
+      width: 100%;
       margin: 0 auto;
 
   }
-  
+   .barDiv {
+       padding: 15px;
+   }
   .barSection {
-      width: 90%;
+      width: 100%;
+      text-align: center;
+      
+
+    }
+  .bio {
+      width: 60%;
+  }    
+  .container {
+      flex-direction: row;
+ 
   }
   }
   
