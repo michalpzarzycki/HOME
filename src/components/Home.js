@@ -6,6 +6,7 @@ function Home() {
     return(  
      
         <section className={styles.mainDiv}>
+              <div className={styles.opacity}></div>
             <div className={styles.flex}>
                 <div className={styles.text}>
                     Hi, I'm <span class={styles.name}>Michal Zarzycki</span><br></br>
@@ -15,6 +16,7 @@ function Home() {
                     <button>My projects</button>
                 </div>
             </div>
+          
         </section>
     
     )
