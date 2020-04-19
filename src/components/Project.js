@@ -34,17 +34,19 @@ function Project() {
                         <div className={styles.likeDisplay}>100</div>
                     </div>
                 </div>
-                <section className={styles.addComment}>
+                <form className={styles.addComment}>
                     <input type="text" placeholder="Name"/>
                     <input type="email" placeholder="email"/>
                     <textarea placeholder="Comment..."/>
                     <button>Add Comment</button>
-                </section>
+                </form>
                 <section className={styles.comments}>
                     <div className={styles.commentData}>
                         <div className={styles.commentAuthor}>AUTHOR(email)</div>
                         <div className={styles.commentDate}>01.01.01</div>
+                        <div className={styles.commentNumber}>#1</div>
                     </div>
+                    
                     <div className={styles.commentContent}>
                         <p>SUPER PROJECT! GOOD JOB!</p>
                     </div>
