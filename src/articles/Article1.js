@@ -22,13 +22,7 @@ function Article1() {
             </section>
             <section className={styles.paragraphSection}>
                 <h1 className={styles.paragraphSection_header}>PAragraph 1</h1>
-                <p className={styles.paragraphSection_paragraph}>The last rule exists for this binding.The function that is called with new operator when the code new Foo(…) is executed, the following things happen:
-
-                1- An empty object is created and referenced by this variable, inheriting the prototype of the function.
-
-                2- Properties and methods are added to the object referenced by this.
-
-                3- The newly created object referenced by this is returned at the end implicitly (if no other object was returned explicitly).</p>
+                <p className={styles.paragraphSection_paragraph}>The last rule exists for this binding.The function that is called with new operator when the code new Foo(…) is executed, the following things happen: 1- An empty object is created and referenced by this variable, inheriting the prototype of the function.2- Properties and methods are added to the object referenced by this. 3- The newly created object referenced by this is returned at the end implicitly (if no other object was returned explicitly).</p>
             </section>
 
         </div>

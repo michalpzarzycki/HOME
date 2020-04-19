@@ -38,10 +38,10 @@ function Blog({animation}) {
             <a className={animation.blog!==false ? styles.a : styles.none} href="/">
                 <div className={styles.postContainer}>
                     <div className={styles.image}>
-                    <div className={styles.background} style={{background:'url("https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/93803214_635299107319689_1694625770938302464_n.jpg?_nc_cat=106&_nc_sid=b96e70&_nc_ohc=vvLe6ZxY7-8AX9KrcIb&_nc_ht=scontent-waw1-1.xx&oh=78287b26cffa3334a5a507fe3ba308be&oe=5EC1911B")'}}></div>
-                        <div className={styles.img} style={{background:'url("https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/93803214_635299107319689_1694625770938302464_n.jpg?_nc_cat=106&_nc_sid=b96e70&_nc_ohc=vvLe6ZxY7-8AX9KrcIb&_nc_ht=scontent-waw1-1.xx&oh=78287b26cffa3334a5a507fe3ba308be&oe=5EC1911B")'}}></div>
+                    <div className={styles.background} style={{background:'url("https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")'}}></div>
+                        <div className={styles.img} style={{background:'url("https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")'}}></div>
                     </div>
-                    <div className={styles.title}>WORLD TRADE CENTER</div>
+                    <div className={styles.title}>Why I love JS</div>
                     <div className={styles.date}>9/11/01</div>
                     <div className={styles.postLine}></div>
                     <div className={styles.description}>Description goes here</div>
@@ -50,10 +50,10 @@ function Blog({animation}) {
             <a className={animation.blog!==false ? styles.a : styles.none} href="/">
                 <div className={styles.postContainer}>
                     <div className={styles.image}>
-                    <div className={styles.background} style={{background:'url("https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/93803214_635299107319689_1694625770938302464_n.jpg?_nc_cat=106&_nc_sid=b96e70&_nc_ohc=vvLe6ZxY7-8AX9KrcIb&_nc_ht=scontent-waw1-1.xx&oh=78287b26cffa3334a5a507fe3ba308be&oe=5EC1911B")'}}></div>
-                        <div className={styles.img} style={{background:'url("https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/93803214_635299107319689_1694625770938302464_n.jpg?_nc_cat=106&_nc_sid=b96e70&_nc_ohc=vvLe6ZxY7-8AX9KrcIb&_nc_ht=scontent-waw1-1.xx&oh=78287b26cffa3334a5a507fe3ba308be&oe=5EC1911B")'}}></div>
+                    <div className={styles.background} style={{background:'url("https://images.pexels.com/photos/7095/people-coffee-notes-tea.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")'}}></div>
+                        <div className={styles.img} style={{background:'url("https://images.pexels.com/photos/7095/people-coffee-notes-tea.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")'}}></div>
                     </div>
-                    <div className={styles.title}>WORLD TRADE CENTER</div>
+                    <div className={styles.title}>What I've been learning from my projects</div>
                     <div className={styles.date}>9/11/01</div>
                     <div className={styles.postLine}></div>
                     <div className={styles.description}>Description goes here</div>
