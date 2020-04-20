@@ -14,7 +14,7 @@ function LandingPage() {
     const [isAnimationStart, setIsAnimationStart] = useState({about: false, projects:false, contact: false, blog:false})
     const [isPopupVisible, setIsPopupVisible] = useState(false)
     const [popupData, setPopupData] = useState({})
-    const [choosenProject, setChoosenProject] = useState({gifs:[]})
+    const [choosenProject, setChoosenProject] = useState({})
     useLayoutEffect(()=>{
         setPositionY(window.pageYOffset)
         db.collection("projects").onSnapshot(handleSnapshot)
@@ -27,6 +27,8 @@ function LandingPage() {
         const items = snapshot.docs.map(doc => {
             return { qid: doc.id, ...doc.data() }
         })
+
+    
         
 
         

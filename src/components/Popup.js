@@ -4,6 +4,7 @@ import pic1 from '../gifs/intervYou1.gif'
 
 import styles from './Popup.module.css'
 import { Link } from 'react-router-dom'
+import { db } from '../firebase'
 
 const INIT_STATE = {
         title: 'TITLE',
@@ -18,17 +19,17 @@ const INIT_STATE = {
         likes: 5
 }
 
-function Popup({visible, handlePopup, choosenProject, handleClose}) {
-const [data, setData] = useState(INIT_STATE)
+function Popup({visible, handlePopup, choosenProject, handleClose, popupData}) {
+const [data, setData] = useState({})
 const [isVisible, setIsVisible] = useState(visible)
 const [gifNumber, setGifNumber] = useState(1)
 const [gifArray, setGifArray] = useState([1,1])
 
-
+const {comments} = choosenProject
 
 
 useEffect(() => {
-
+    let project = db.collection('projects').doc()
     if(document.querySelector('body')) {
         document.querySelector('#image').style.backgroundImage = `url("${pic1}")` ;
         let dots = gifArray.map((elem, index) => document.getElementById(`${index+1}`))
@@ -89,7 +90,7 @@ function handleLeftArrow() {
                     <div className={styles.buttons}>
                         <button>GITHUB</button>
                         <button>WWW</button>
-                        <Link to={`/project/${choosenProject.qid}`} >COMMENT</Link>
+                            <Link to={`/project/${choosenProject.qid}`} >COMMENT{`(${comments && comments.length})`}</Link>
                     </div>
                     <div className={styles.description}>
                         <p>ReactJS chat App connected with Firebase firestore</p>
