@@ -18,7 +18,7 @@ function App() {
        <Route strict exact path="/" component={LandingPage}/>
        <Route exact path="/article1" component={Article1} />
        <Route exact path="/article1" component={Article2} />
-       <Route exact path="/project" component={Project} />
+       <Route path="/project/:qid" component={Project} />
        <Redirect to="/" />
      </Switch>
    </Router>

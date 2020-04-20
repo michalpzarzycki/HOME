@@ -14,7 +14,7 @@ function LandingPage() {
     const [isAnimationStart, setIsAnimationStart] = useState({about: false, projects:false, contact: false, blog:false})
     const [isPopupVisible, setIsPopupVisible] = useState(false)
     const [popupData, setPopupData] = useState({})
-    const [choosenProject, setChoosenProject] = useState({})
+    const [choosenProject, setChoosenProject] = useState({gifs:[]})
     useLayoutEffect(()=>{
         setPositionY(window.pageYOffset)
         db.collection("projects").onSnapshot(handleSnapshot)

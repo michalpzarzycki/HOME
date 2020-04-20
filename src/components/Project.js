@@ -1,9 +1,50 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './Project.module.css'
 import { Link } from 'react-router-dom'
+import {db} from '../firebase'
 
-function Project() {
+function Project(props) {
+    const [projectsData, setProjectsData] = useState({})
+    useEffect(() => {
+        db.collection('projects').doc()
 
+    }, [])
+
+    useEffect(() => {       
+        // TODO: Unsubscribe to this function 
+        db.collection("projects").onSnapshot(handleSnapshot)
+    }, [])
+
+
+
+
+    function handleSnapshot(snapshot) {
+        const projects = snapshot.docs.map(doc => {
+            
+            return { qid: doc.id, ...doc.data() }
+        })
+        let filtered = Object.values(projects).filter(elem => 
+            {    console.log(elem.qid == props.match.params.qid)
+                return( elem.qid == props.match.params.qid) 
+               
+
+            })
+            console.log("SORTED", filtered)
+        
+        setProjectsData(...filtered)
+    }
+
+    function handleLike() {
+        let likeId = props.match.params.qid;
+        const likeRef = db.collection('projects').doc(likeId);
+        likeRef.get().then(doc => {
+            if(doc.exists) {
+                let updatedLikes = doc.data().likes + 1;
+                likeRef.update({likes: updatedLikes})
+                console.log("UPDATED", updatedLikes)
+            }
+        })
+    }
     return(
         <div className={styles.mainDiv}>
             <section className={styles.navbar}>
@@ -28,10 +69,10 @@ function Project() {
                     <div className={styles.description}>
                         <p>ReactJS chat App connected with Firebase firestore</p>
                     </div>
-                    <div className={styles.likesSection}>
+                    <div className={styles.likesSection} onClick={handleLike}>
                         <p>Like it? Let me know -> </p>
                         <i class="fas fa-thumbs-up"></i>
-                        <div className={styles.likeDisplay}>100</div>
+                        <div className={styles.likeDisplay}>{projectsData.likes}</div>
                     </div>
                 </div>
                 <form className={styles.addComment}>
